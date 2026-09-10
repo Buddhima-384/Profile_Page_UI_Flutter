@@ -54,6 +54,16 @@ class _MyProfilePageState extends State<MyProfilePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Center(
+              child: CircleAvatar(
+                radius: 50,
+                backgroundImage: NetworkImage(
+                  "https://media.istockphoto.com/id/2151669184/vector/vector-flat-illustration-in-grayscale-avatar-user-profile-person-icon-gender-neutral.jpg?s=612x612&w=0&k=20&c=UEa7oHoOL30ynvmJzSCIPrwwopJdfqzBs0q69ezQoM8=",
+                ),
+              ),
+            ),
+            SizedBox(height: 20),
+            Divider(thickness: 5, color: Colors.black),
             SizedBox(height: 20),
             Text(
               "Name",
@@ -61,7 +71,7 @@ class _MyProfilePageState extends State<MyProfilePage> {
             ),
             Text(
               "Buddhima",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal),
             ),
             SizedBox(height: 20),
             Text(
@@ -70,7 +80,7 @@ class _MyProfilePageState extends State<MyProfilePage> {
             ),
             Text(
               "buddhima@example.com",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal),
             ),
             SizedBox(height: 20),
             Row(
