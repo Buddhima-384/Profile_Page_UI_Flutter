@@ -52,6 +52,7 @@ class _MyProfilePageState extends State<MyProfilePage> {
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 20),
             Text(
